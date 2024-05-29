@@ -1,0 +1,39 @@
+1) Install Node.js on linux server
+sudo yum install https://rpm.nodesource.com/pub_21.x/nodistro/repo/nodesource-release-nodistro-1.noarch.rpm -y
+sudo yum install nodejs -y --setopt=nodesource-nodejs.module_hotfixes=1
+
+2)Install git
+sudo yum install git -y
+
+check npm verion
+npm -verion
+
+check git version 
+git --version
+
+3)clone repositery to ec2 server
+
+4)initialise npm using npm i command
+
+5)Create RDS 
+make security group
+connect ec2 instance to SQL by connectiong security group of ec2 to security group of DB.
+add new rule in inbound rule.
+
+6)go to workbench
+create new connection using ssh
+
+7)add new inbound rule to ec2 instance(allow port 3000)
+
+install pm2
+
+install nginx
+
+go to etc/nginx/conf.d
+
+create new file abc.conf
+paste nginx reverse proxy configuration
+save n exit
+start nginx--sudo service nginx restart
+check nginx status--systemctl status nginx
+
